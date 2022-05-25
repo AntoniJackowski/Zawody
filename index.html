@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikacja - zawody</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <table id="zawodnicy-tabela">
+            <tr>
+                <th id="sort-nazwisko">Nazwisko</th>
+                <th id="sort-imie">Imię</th>
+                <th id="sort-plec">Płeć</th>
+                <th id="sort-punkty">Punkty</th>
+            </tr>
+            <tr>
+                <td>Żebrowski</td>
+                <td>Cyprian</td>
+                <td>M</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Poręba</td>
+                <td>Cezary</td>
+                <td>M</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Paszkowski</td>
+                <td>Oskar</td>
+                <td>M</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Piekarska</td>
+                <td>Jagoda</td>
+                <td>K</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>Włodarczyk</td>
+                <td>Borys</td>
+                <td>M</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Sowińska</td>
+                <td>Danuta</td>
+                <td>K</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>Majkowski</td>
+                <td>Florian</td>
+                <td>M</td>
+                <td>10</td>
+            </tr>
+        </table>
+  
+        <div class="tabs">
+            <button id="pokaz-wszyscy" class="active">Wszyscy</button>
+            <button id="pokaz-kobiety">Kobiety</button>
+            <button id="pokaz-mezczyzna">Mężczyźni</button>
+        </div>
+  
+        <div id="statystyki-wszyscy" class="card show">
+            <p>Liczba uczestników: <b id="uczestnicy-wszyscy">-</b></p>
+            <p>Suma punktów: <b id="punkty-wszyscy">-</b></p>
+            <p>Najlepszy uczestnik: <b id="najlepszy-wszyscy">-</b></p>
+        </div>
+  
+        <div id="statystyki-kobiety" class="card">
+            <p>Liczba uczestniczących kobiet: <b id="uczestnicy-kobiety">-</b></p>
+            <p>Suma punktów kobiet: <b id="punkty-kobiety">-</b></p>
+            <p>Najlepszy uczestnik kobieta: <b id="najlepszy-kobiety">-</b></p>
+        </div>
+  
+        <div id="statystyki-mezczyzni" class="card">
+            <p>Liczba uczestniczących mężczyzn: <b id="uczestnicy-mezczyzni">-</b></p>
+            <p>Suma punktów mężczyzna: <b id="punkty-mezczyzni">-</b></p>
+            <p>Najlepszy uczestnik mężczyzna: <b id="najlepszy-mezczyzni">-</b></p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

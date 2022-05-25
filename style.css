@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  body {
+    font-family: sans-serif;
+  }
+
+  table {
+    margin: 15px 0;
+    width: 100%;
+  }
+
+  tr,
+  td,
+  th {
+    border: 1px solid #171717;
+    padding: 10px 15px;
+  }
+
+  th {
+    letter-spacing: 1px;
+    background-color: #171717;
+    color: white;
+  }
+
+  td {
+    font-size: 14px;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .card {
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #171717;
+    display: none;
+  }
+
+  .card.show {
+    display: block;
+  }
+
+  .card p {
+    line-height: 1.4;
+  }
+
+  .tabs button {
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #171717;
+    background-color: transparent;
+    border: 2px solid #171717;
+  }
+
+  .tabs button:hover {
+    background-color: rgba(23, 23, 23, 0.1);
+  }
+
+  .tabs button.active {
+    background-color: #171717;
+    color: white;
+  }
